@@ -15,6 +15,8 @@ title: Teach Machines
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+         by {{ post.author }} <p/>
+         {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>
