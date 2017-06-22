@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 name: Teach Machines
+title: Teach Machines
 markdown: kramdown
+description: Teach Machines is a mission to simplify human life by Machine Learning
