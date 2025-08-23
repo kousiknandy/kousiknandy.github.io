@@ -1,5 +1,6 @@
 name: Kousik Nandy
 title: Kousik Nandy
+author: Kousik Nandy
 description: My karma and collection of different hacks ...
 
 social-network-links:
@@ -17,6 +18,8 @@ feed_show_tags: true
 post_search: true
 edit_page_button: true
 navbar-var-length: false
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
 
 remote_theme: daattali/beautiful-jekyll@6.0.1
 plugins:
