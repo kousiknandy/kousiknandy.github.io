@@ -3,5 +3,4 @@ title: Kousik Nandy
 markdown: kramdown
 description: My karma and collection of different hacks ...
 excerpt_separator: <!--more-->
-google_analytics: UA-101479508-1
 remote_theme: daattali/beautiful-jekyll@6.0.1
