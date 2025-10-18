@@ -1,0 +1,244 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.75in,right=0.65in,bottom=0.75in]{geometry} % Document margins
+\usepackage{hyperref}
+
+\name{Kousik Nandy} % Your name
+\address{{\tt \href{https://www.linkedin.com/in/kousiknandy}{https://www.linkedin.com/in/kousiknandy}}} % Your secondary addess (optional)
+%\address{\tt https://www.linkedin.com/in/kousiknandy} % Your secondary addess (optional)
+% \address{\tt 42 The Ruffetts, CR2 7LR London UK} % Your address
+\address{ +44 7880 119581 \\ {\tt kousik.nandy@gmail.com} \\  London, UK} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Career summary}
+Accomplished engineer with experience in software  development and engineering leadership.  
+Shipped several products from grounds up, and built teams from scratch with strong focus on business value. 
+\begin{rSubsection}{}{}{}{}
+    {\vspace{-1.5em}}
+    \itemsep -0.5em
+    \item Expert in system architecture of planet scale systems, computer networking and network security. 
+    \item Created on-premise Kubernetes based PaaS for enterprise networking applications.
+    \item Fully hands on software engineer: coding expert in Python, system programming in C and Rust.
+    \item Bootstrapped and led three successful teams by strong mentorship skills, and managed one.
+    \item 8 US Patents in distributed systems, network security protocols and XML message processing.
+
+\end{rSubsection}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+  \begin{rSubsection}{Meta }{June 2021 -- Present}{Staff Engineer, Production Engineering}{London}
+  {Leading the London Production Engineering Privacy team, protecting user
+  privacy through data access control and lifecycle management infrastructure 
+  across various products like Facebook and Instagram. Supporting the reliability 
+  engagements with 3 privacy organizations with 1000+ engineers, and in the process grew and 
+  mentored the production engineering team of 7 from the start. }
+
+    \item {\em Privacy Infrastructure reliability}: Working on improving the reliability of privacy enforcement in 
+    Meta's service mesh, protecting user data accessed by services over Thrift RPC calls, or in data warehouse 
+    as data flows through various tables. Privacy policies  are applied on over trillion of accesses per day, 
+    keeping the privacy commitments to the users.
+    \begin{itemize}
+        \renewcommand\labelitemi{--}
+        {\small
+        \itemsep -0.5em % \vspace{-0.5em}
+        \item Set up reliability bar for online and offline privacy infrastructure, resulting in 0 site or product wide outage.
+      \item Optimized selected policy checks in the client side to reduce the network load on the 
+      data systems by 0.8\%.
+        \item Introduced `Privacy Storms' to turn privacy controls off in production (including a 
+        fleetwide killswitch) ensuring we can recover and privacy implications are understood,  increasing 
+        safety of privacy infra  by  75\%.
+    }
+            \end{itemize}
+
+    \item {\em Deletion framework scaling}: Transformed the system architecture to operate at scale to delete 
+    user data with an SLA to comply with regulatory guidelines, executing the deletion of millions of Facebook and Instagram accounts and several hundreds of billions objects everyday. 
+    \begin{itemize}
+        \renewcommand\labelitemi{--}
+        {\small
+        \itemsep -0.5em % \vspace{-0.5em}
+      \item Changed the system architecture to permit independent scaling, enabling deletions meet regulatory compliance. The new architecture  deleted 23.7B Instagram a/c and 2.7T objects to deprecate Nearby Friends.
+      \item The new architecture helped Meta launch the Ads Free Service by deleting ads data of 3B inactive 
+      and 300M  active Facebook and Instagram users in 4 days to comply with the EU regulations.
+      \item Created management framework for a data pipelines processing 100s of billions of objects. The framework increased the
+      reliability, reduced alerts by 30\% and increased throughput by 52\%.
+      \item Engineered a multi-tenancy capable version of  deletion systems so that applications
+      can manage and fund deletion of data, enabling large deprecation meet regulatory deadlines,
+      speeding up  completion  by 10x. 
+      }
+        \end{itemize}
+    Achieved large scale deletion of data, especially product deprecation possible by separating the concerns, protecting the infrastructure and automating execution, helping Meta protect user privacy at scale  and meet regulatory compliance in 2 years. 
+    
+        
+    \item {\em Project FBoT -- Facebook over Tor}: As a strong advocate of user privacy rights, maintain Meta's infrastructure to support access to Facebook's onion address over Tor network. 
+    
+     \begin{itemize}
+        \renewcommand\labelitemi{--}
+        {\small
+        \itemsep -0.5em % \vspace{-0.5em}
+      \item Fixed support of media upload to Facebook over Tor, allowing users to share photos, videos on Facebook.
+      \item Added messenger end to end encryption support over Tor browser, enabling users to communicate securely.
+      }
+        \end{itemize}
+     Helped millions of users to communicate during the global conflicts avoiding censorship \& surveillance.     
+  \end{rSubsection}
+
+  \begin{rSubsection}{Cisco Systems}{April 2015 -- May 2021}{Principal Engineer, Enterprise Networking}{Bangalore}
+      {Developed the infrastructure of Cisco DNA Center, from Cisco Enterprise
+      Networking  that manages and monitors enterprise networks. Built the platform and 
+      shipped the product to achieve \$1B/year run-rate.}
+    
+  \item {\em Project Maglev -- PaaS for Cisco DNA Center}: Redefined the
+    paradigm of Cisco's Enterprise Networking BU's management software
+    delivery mechanism by creating an on-premise microservice platform.
+    Been responsible for the infrastructure \& platform,
+    including the hardware appliance, operating system, services
+    orchestration layer (based on Kubernetes), the PaaS layer and
+    security. 
+
+     \begin{itemize}
+        \renewcommand\labelitemi{--}
+        {\small
+        \itemsep -0.5em % \vspace{-0.5em}
+      \item Defined the hardware appliance and designed the
+        manufacturing pipeline to ship 25000+ appliances.
+      \item Created the solution of on-premise Kubernetes cluster to
+        support microservice based applications, achieving scalability for 100 microservices
+        and fault-tolerance against hardware and operating system failures.
+      \item Designed the in-place upgrade of appliance, that updates the
+        firmware, O/S, Kubernetes and PaaS layer. This achieved 99.9\%
+        uptime from 99.5\% and reduced support tickets by 50\%. 
+      \item Combined the underlying infrastructure layers to create a
+        K8s distribution that is OEM ready for on-premise appliances.
+        Added link-local addressing support to K8s for
+        enterprise data center deployment.
+        }
+      \end{itemize}
+    
+     Led the product-wide security team; and taken the charge of the platform security.
+    \begin{itemize}
+        \renewcommand\labelitemi{--}
+        {\small
+          \itemsep -0.5em % \vspace{-0.5em}
+      \item As Security Officer of Cisco DNA Center, owned the security
+        assets. Implemented platform security solutions e.g secure boot, encrypted
+        filesystem, TPM based key management, increasing the security posture. 
+      \item Managed security vulnerabilities of Cisco DNA Center, discovered and fixed issues with CVSS score 10.
+      \item Launched secure development lifecycle: threat model, product
+        security baseline, vulnerability scans etc.
+      \item Attained  FIPS compliance and other government certifications,
+      enabling financial institutions customers.
+        }
+      \end{itemize}
+     
+     
+    Started and grew a team of 20 talented engineers and took the product through several
+    successful releases over 5 years. Collaborated with product management to define the product,
+    and supported a majority of customer escalations with an installation
+    base of over 13000.  
+  
+  \item {\em Project Thundercloud -- Microservice Platform for Virtual CPE}:
+    Introduced a new paradigm of home internet access by
+    virtualization the CPE  hosted in service provider's data
+    center, enabling  value added services, hosting 400 CPE per UCS rack server and
+    supporting 10Gbps traffic.
+
+    
+  \end{rSubsection}
+  
+  \begin{rSubsection}{Ericsson Research}{July 2014 -- April 2015}{Principal Research Engineer, Cloud Engineering}{Bangalore}
+    {Responsible for advancing the technology, innovation and creating new solution in cloud space. }
+    
+    \item {\em  Simulation Framework for Large  Scale Multi-tier Cloud
+      Based Application}: Invented an Application Description Language
+      to describe application behaviour and simulate running  on  cloud
+      infrastructure at a very large scale. The framework predicted the 
+      cost of complex cloud topology with 75\% confidence.
+      
+      \begin{itemize}
+        \renewcommand\labelitemi{--}
+        {\small
+        \itemsep -0.5em  \vspace{-0.5em}
+      \item Presented: High Performance Computing Conf Goa '14  \&
+       India Software Engineering Conf Bangalore '15.
+        }
+      \end{itemize}  
+\end{rSubsection}
+
+%------------------------------------------------
+
+  \begin{rSubsection}{Ericsson}{November 2011 -- June 2014}{Principal Engineer, Systems \& Technology}{Bangalore}
+    {Owned the architecture and engineering effort of virtualization and security of Ericsson IPOS.}
+
+\item {\em IPOS on Virtual Platforms}:  Architected the reference platform (IPOS-REF) for IPOS, 
+  the basis of Ericsson Virtual IP Platform (VIPP) appliance, enabling cloud based offering from service providers.
+  
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Cisco Systems, Sonoa Networks (Apigee), Analog Devices}{1999 -- 2011}{Technical Leader and Software Engineer}{Bangalore}
+  {Software engineering roles in Cisco UCS, Cisco VPN, Apigee XML proxy, Analog Devices VisualDSP++}
+
+\end{rSubsection}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\em $\cdot$ M.Tech. in Computer Science \& Engineering  }  \hfill  Indian Institute of Technology, Kanpur \\
+{\em $\cdot$ B.E. in Electronics \& Tele-communication Engineering } \hfill  Jadavpur University, Calcutta 
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
