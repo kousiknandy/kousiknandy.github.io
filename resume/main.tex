@@ -38,16 +38,16 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Career summary}
-Accomplished engineer with experience in software  development and engineering leadership.  
-Shipped several products from grounds up, and built teams from scratch with strong focus on business value. 
+Accomplished engineer with experience in software development and engineering leadership.  
+Shipped several products from ground up and built teams from scratch with strong focus on business value. 
 \begin{rSubsection}{}{}{}{}
     {\vspace{-1.5em}}
     \itemsep -0.5em
     \item Expert in system architecture of planet scale systems, computer networking and network security. 
-    \item Created on-premise Kubernetes based PaaS for enterprise networking applications.
+    \item Created on-premise Kubernetes-based PaaS for enterprise networking applications.
     \item Fully hands on software engineer: coding expert in Python, system programming in C and Rust.
-    \item Bootstrapped and led three successful teams by strong mentorship skills, and managed one.
-    \item 8 US Patents in distributed systems, network security protocols and XML message processing.
+    \item Bootstrapped and led three successful teams with strong mentorship skills and managed one.
+    \item 8 US patents in distributed systems, network security protocols, and XML message processing.
 
 \end{rSubsection}
 \end{rSection}
@@ -60,15 +60,28 @@ Shipped several products from grounds up, and built teams from scratch with stro
 \begin{rSection}{Experience}
 
   \begin{rSubsection}{Meta }{June 2021 -- Present}{Staff Engineer, Production Engineering}{London}
-  {Enabling Meta's footprint in public cloud. 
-  
-  Previously, lead the London Production Engineering Privacy team, protecting user
+  {Extending Meta's infrastructure footprint in the public cloud. Leading the Cloud Foundation Networking team to augment Meta's production network to various cloud providers and design cloud networks to enable training of Meta's AI models. This enables Meta to harness about 1GW of compute  across
+  cloud providers like AWS, OCI, GCP \& Coreweave, with several clusters comprised of 10-40 thousand GPUs.}
+
+   \item {\em Cloud Networking}: Creating the network architecture for AI training clusters, keeping them secure and compliant. 
+   Also extend the production network to cloud, managing the direct connections between Meta data centers and cloud providers.
+
+\begin{itemize}
+        \renewcommand\labelitemi{--}
+        {\small
+        \itemsep -0.5em % \vspace{-0.5em}
+        \item Created a reusable management plane  deployed across 4 cloud vendors for security and compliance
+        \item Created an unified storage network to host S3 express zone, FSx for Lustre for AI training 
+ } \end{itemize}
+
+  \end{rSubsection} \vspace{-2em}
+  \begin{rSubsection}{}{}{}{}{Previously, lead the London Production Engineering Privacy team, protecting user
   privacy through data access control and lifecycle management infrastructure 
   across various products like Facebook and Instagram. Supporting the reliability 
   engagements with 3 privacy organizations with 1000+ engineers, and in the process grew and 
-  mentored the production engineering team of 7 from the start. }
+  mentored the production engineering team of 7 from the start.}
 
-    \item {\em Privacy Infrastructure reliability}: Working on improving the reliability of privacy enforcement in 
+  \item {\em Privacy Infrastructure reliability}: Improved the reliability of privacy enforcement in 
     Meta's service mesh, protecting user data accessed by services over Thrift RPC calls, or in data warehouse 
     as data flows through various tables. Privacy policies  are applied on over trillion of accesses per day, 
     keeping the privacy commitments to the users.
@@ -84,6 +97,7 @@ Shipped several products from grounds up, and built teams from scratch with stro
         safety of privacy infra  by  75\%.
     }
             \end{itemize}
+
 
     \item {\em Deletion framework scaling}: Transformed the system architecture to operate at scale to delete 
     user data with an SLA to comply with regulatory guidelines, executing the deletion of millions of Facebook and Instagram accounts and several hundreds of billions objects everyday. 

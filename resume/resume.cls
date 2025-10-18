@@ -63,7 +63,6 @@
   \begingroup
     \def \\ {\addressSep\ }
      \centerline{#1}
-    
   \endgroup
   \par
   \addressskip
@@ -71,7 +70,7 @@
 }
 
 % \printname is used to print the name as a page header
-\def \printname {
+\def \printname { 
   \begingroup
     \hfil{\namesize\bf \@name}\hfil
     \nameskip\break
@@ -91,7 +90,7 @@
     \@ifundefined{@addresstwo}{}{ % Print the second address if specified
       \printaddress{\@addresstwo}}
     \@ifundefined{@addressthree}{}{ % Print the third address if specified
-      \printaddress{\@addressthree}}
+      \printaddress{\@addressthree}}  
 }
 
 %----------------------------------------------------------------------------------------
