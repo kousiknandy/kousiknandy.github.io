@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cisco Systems 2000-2005: Architecting the Future of Secure Mobility"
+title: "Cisco Systems 2000-2005
 author: "Kousik Nandy"
 ---
 
