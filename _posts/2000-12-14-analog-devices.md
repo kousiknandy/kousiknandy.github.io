@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Analog Devices 1999–2000"
+title: "Analog Devices: 1999–2000"
 author: "Kousik Nandy"
 ---
 
