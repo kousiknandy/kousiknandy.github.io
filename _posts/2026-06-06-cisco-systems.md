@@ -37,7 +37,7 @@ Holding a **Security Ninja Brown Belt** (the penultimate level of security exper
 
 ## Impact at Scale
 
-What started as a foundational project in Bangalore grew into Cisco’s flagship product for Enterprise Networking. By 2021, our installation base surpassed **13,000 customers**, and I had the privilege of evangelizing the platform to a community of over a thousand application developers and partners.
+What started as a foundational project in Bangalore grew into Cisco’s flagship product for Enterprise Networking. By 2021, our installation base surpassed **13,000 customers** (as of 2021), and I had the privilege of evangelizing the platform to a community of over a thousand application developers and partners.
 
 Building a team of 20 talented engineers from the ground up to realize this vision was one of the most rewarding aspects of my career. We didn't just build a tool; we built a scalable, secure, and automated ecosystem that defined the next generation of Intent-Based Networking (IBN). 
 
