@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meta/Facebook 2021-2025: Engineering Privacy at Hyperscale"
+title: "Meta/Facebook 2021-2025"
 author: Kousik Nandy
 ---
 
