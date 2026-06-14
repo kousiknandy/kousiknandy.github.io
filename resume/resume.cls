@@ -30,6 +30,8 @@
 
 % \renewcommand{\familydefault}{\sfdefault}
 
+\hyphenpenalty 100
+\exhyphenpenalty 100
 
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
@@ -38,8 +40,8 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-%\def \addressSep {\newline} % Set default address separator to a diamond
-\def \addressSep {\hspace{1em}$\ddagger$\hspace{1em}} % Set default address separator to a diamond
+%\def \addressSep {\newline\vert} % Set default address separator to a diamond
+\def \addressSep {$\vert$} % Set default address separator to a vertical bar
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -66,7 +68,7 @@
   \endgroup
   \par
   \addressskip
-  %\newline
+  \newline
 }
 
 % \printname is used to print the name as a page header
