@@ -26,8 +26,7 @@
 \usepackage{hyperref}
 
 \name{Kousik Nandy}
-\address{{\tt \href{https://www.linkedin.com/in/kousiknandy}{https://www.linkedin.com/in/kousiknandy}}}
-\address{+44 7880 119581 \\ {\tt kousik.nandy@gmail.com} \\ London, UK}
+\address{ \href{https://www.linkedin.com/in/kousiknandy}{https://www.linkedin.com/in/kousiknandy} \\ +44 7880 119581 \\ {\tt kousik.nandy@gmail.com} \\ London, UK}
 
 \begin{document}
 
@@ -35,7 +34,7 @@
 %	CAREER SUMMARY
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Career Summary}
+\begin{rSection}{PROFESSIONAL SUMMARY}
 
 Principal and Staff engineer with 25+ years of experience designing and operating planet-scale infrastructure, specializing in large-scale cloud networking, AI/ML training and inference infrastructure, and
 distributed systems. Proven track record of building \$1B+ products, leading teams from scratch 
@@ -43,9 +42,17 @@ and delivering infrastructure that operates at global scale with high reliabilit
 \begin{rSubsection}{}{}{}{}
 {\vspace{-1.5em}}
 \itemsep -0.5em
-\item Architecting the public cloud networking for AI clusters of 10--40K GPUs/TPUs across AWS, OCI, GCP and CoreWeave, enabling approximately 2.4 GW of AI compute to be harnessed by Meta.
-\item Expert in large-scale distributed systems,  networking, Kubernetes-based PaaS, and  security.
+\item Expert in large-scale distributed systems,  networking, on-prem Kubernetes-based PaaS, and  security.
 \item \mbox{Hands-on engineer: infrastructure automation in Python, IaC in Terraform, systems programming in C.}
+
+\end{rSubsection}
+\vspace{-.5em}
+
+\begin{rSubsection}{Technology Leadership \& Innovation}{}{}{}
+{\vspace{-2em}}\itemsep -0.5em
+\item Pioneered Meta’s production-grade multi-cloud AI networking architecture, establishing the company’s standard for secure, compliant 10K–40K GPU clusters and enabling 2.4 GW of AI compute.
+\item Conceived and built Cisco DNA Center’s on-premise Kubernetes PaaS: the first production-grade on-prem K8s distribution for enterprise network management, powering a \$1B+ product.
+\item Introduced “Privacy Storms”: a novel chaos engineering practice with fleet-wide killswitch for Meta’s privacy infrastructure, improving resilience confidence by 75\%.
 \item Built and led three high-performing infrastructure teams from inception; mentored 20+ engineers.
 \item 8 US patents in distributed systems, network security protocols, and XML message processing.
 \end{rSubsection}
@@ -56,14 +63,14 @@ and delivering infrastructure that operates at global scale with high reliabilit
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\begin{rSection}{Work Experience}
 
 %--- META ---
-\begin{rSubsection}{Meta}{June 2021 -- Present}{Staff Engineer, Production Engineering}{London}
-{Leading Meta's cloud infrastructure expansion, with a focus on AI training and inference networking. Responsible for extending Meta's production network into major cloud providers to support about 2.4 GW of AI compute and 400 MW of non-AI compute across AWS, OCI, GCP, and CoreWeave, nearly doubling Meta fleet size, with several clusters ranging from 10K to 40K GPUs and TPUs.}
+\begin{rSubsection}{Meta}{June 2021 --- Present}{Staff Engineer, Production Engineering}{London}
+{Leading Meta's cloud infrastructure expansion, with a focus on AI training and inference networking. Responsible for extending Meta's production network into major cloud providers to support about 2.4 GW of AI compute and 400 MW of non-AI compute across AWS, OCI, GCP, and CoreWeave neocloud, nearly doubling Meta fleet size, with several clusters ranging from 10K to 40K GPUs and TPUs.}
 
-\item {\em AI \& Cloud Infrastructure Networking}:
-Designed and built the end-to-end cloud network architecture that's secure and compliant powering Meta's large-scale AI training and inference workloads.
+\item {\em AI \& Cloud  Networking}:
+Pioneered Meta’s first production-grade multi-cloud AI network architecture, establishing the  engineering blueprint for high-throughput, secure, and compliant AI fabric routing.
 
 \begin{itemize}
 \renewcommand\labelitemi{--}
@@ -71,7 +78,7 @@ Designed and built the end-to-end cloud network architecture that's secure and c
 \itemsep -0.5em
 \item Established Meta's production-grade cloud network standard: from interconnect provisioning to application-layer routing, covering frontend, backend, and AI fabric networks across all cloud providers.
 \item Architected and optimized hybrid-cloud networking frameworks to seamlessly scale compute capacity across internal infra and public cloud providers, enabling the orchestration of tens of thousands of next-generation GPU (Blackwell) and TPU clusters.
-\item Provisioned 10+ circuits of 1-128 Tbps of direct connections between Meta data centers and cloud providers, enabling high-throughput data transfer for AI training at scale.
+\item Designed and provisioned 10+ high-speed direct interconnect circuits (1–128 Tbps) between Meta data centers and hyperscalers, delivering ultra-high-throughput data pipelines critical for large-scale AI training.
 \item Architected a unified storage network hosting 60 PB of S3 Express Zone and FSx for Lustre storage, purpose-built for AI training data pipelines.
 \item Defined routing, admission control, and security policy frameworks for multi-cloud AI clusters, ensuring compliance and operational consistency across providers.
 }
@@ -79,7 +86,7 @@ Designed and built the end-to-end cloud network architecture that's secure and c
 \end{rSubsection} \vspace{-2em}
 
 %--- META PRIVACY ---
-\begin{rSubsection}{}{}{}{}{Previously led the London Production Engineering Privacy team: built privacy enforcement and data lifecycle management infrastructure supporting Facebook, Instagram, and other Meta products. Grew and mentored a team of 7 engineers from the ground up, supporting reliability engagements across 3 privacy organisations with 1000+ engineers.}
+\begin{rSubsection}{}{}{}{}{Previously led the London Production Engineering Privacy team: built privacy enforcement and data lifecycle management infrastructure supporting Facebook, Instagram, and other Meta products.}
 
 \item {\em Privacy Infrastructure Reliability}:
 Owned reliability for Meta's privacy enforcement layer in the service mesh, protecting user data across Thrift RPC calls and data warehouse flows at over 1 trillion access checks per day.
@@ -89,8 +96,6 @@ Owned reliability for Meta's privacy enforcement layer in the service mesh, prot
 {\small
 \itemsep -0.5em
 \item Defined and enforced reliability standards for online and offline privacy infrastructure; achieved zero site-wide or product-wide privacy outages.
-\item Reduced network load on privacy data systems by 0.8\% through client-side policy check optimisation.
-\item Introduced ``Privacy Storms'':a controlled chaos engineering practice including a fleet-wide killswitch to safely test privacy infrastructure resilience, improving recovery confidence by 75\%.
 }
 \end{itemize}
 
@@ -114,7 +119,7 @@ Maintained Meta's infrastructure supporting Facebook's onion address on the Tor 
 \end{rSubsection}
 
 %--- CISCO ---
-\begin{rSubsection}{Cisco Systems}{April 2015 -- May 2021}{Principal Engineer, Enterprise Networking}{Bangalore}
+\begin{rSubsection}{Cisco Systems}{April 2015 --- May 2021}{Principal Engineer, Enterprise Networking}{Bangalore}
 {Technical leader for Cisco DNA Center, Cisco's enterprise network management platform. Drove the platform from inception to a product with \$1B/year run-rate across 13,000+ customer installations.}
 
 \item {\em Project Maglev -- On-Premise Kubernetes PaaS}:
@@ -140,13 +145,13 @@ Architected a virtualised CPE platform hosted in service provider data centres, 
 \end{rSubsection}
 
 %--- ERICSSON ---
-\begin{rSubsection}{Ericsson Research \& Ericsson}{November 2011 -- April 2015}{Principal Research Engineer, Cloud Engineering}{Bangalore}
+\begin{rSubsection}{Ericsson Research \& Ericsson}{November 2011 --- April 2015}{Principal Research Engineer, Cloud Engineering}{Bangalore}
 {Led architecture and engineering for virtualisation of Ericsson IPOS, introducing Ericsson's core routing platform to cloud-native deployment. Drove technology advancement and innovation in cloud infrastructure.}
 \end{rSubsection}
 
 %--- EARLY CAREER ---
-\begin{rSubsection}{Cisco Systems, Sonoa Networks (Apigee), Analog Devices}{1999 -- 2011}{Technical Leader \& Software Engineer}{Bangalore}
-{Software engineering roles across Cisco UCS, Cisco VPN, Apigee XML proxy, and Analog Devices VisualDSP++.}
+\begin{rSubsection}{Cisco Systems, Sonoa Networks (Apigee), Analog Devices}{1999 --- 2011}{Technical Leader \& Software Engineer}{Bangalore}
+{\mbox{Software engineering roles in Cisco UCS, Cisco VPN, Apigee XML proxy and Analog Devices VisualDSP++.}}
 \end{rSubsection}
 
 \end{rSection}
