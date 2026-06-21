@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meta, 2025 onwards
+title: "Meta: 2025 onwards"
 author: Kousik Nandy
 ---
 
