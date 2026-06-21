@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template — v4 (2-page, ATS-optimised, AI/Infra focused)
+%
+% This template requires the resume.cls file to be in the same directory.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage[left=0.75in,top=0.75in,right=0.65in,bottom=0.65in]{geometry}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\name{Kousik Nandy}
+\address{\href{https://www.linkedin.com/in/kousiknandy}{{\tt www.linkedin.com/in/kousiknandy}} \\ +44 7880 119581 \\ {\tt kousik.nandy@gmail.com} \\ London, UK}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%  PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Summary}
+
+Staff and Principal Engineer with 25+ years designing and operating large-scale cloud infrastructure,
+AI/ML training and inference networking, and distributed systems. Track record of building \$1B+
+products, architecting multi-cloud AI clusters of 10K--40K GPUs and TPUs, delivering infrastructure that operates at global scale with high reliability and leading
+high-performing  teams from inception.
+
+\begin{rSubsection}{Skills}{}{}{}
+{\vspace{-2em}}
+\itemsep -0.5em
+\item \textbf{AI Infrastructure:} Multi-cloud AI networking for 10K--40K GPU/TPU clusters (Blackwell, TPU7x, A100/H100); RDMA, RoCE, InfiniBand; AI training data pipelines; inference fabric design.
+\item \textbf{Cloud \& Networking:} AWS, OCI, GCP, CoreWeave; BGP; Direct Connect / Cloud Interconnect; hybrid-cloud architecture; 100G/400G fabric; network security policy.
+\item \textbf{Platform \& Security:} On-prem Kubernetes PaaS; microservices; SRE; chaos engineering; secure boot; TPM; FIPS~140-2; zero-trust; CVSS-10 remediation.
+\item \textbf{Programming \& IaC:} Python, C, Terraform; infrastructure automation; distributed systems.
+\end{rSubsection}
+
+\vspace{-.25em}
+
+\begin{rSubsection}{Technology Leadership \& Innovation}{}{}{}
+{\vspace{-2em}}\itemsep -0.5em
+\item Pioneered Meta's production-grade multi-cloud AI networking architecture: the company standard for secure, high-throughput 10K--40K GPU/TPU clusters, enabling 2.4~GW of AI compute across AWS, OCI, GCP, and CoreWeave neocloud.
+\item Conceived and built Cisco DNA Center's on-premise Kubernetes PaaS: production-grade on-prem K8s distribution for enterprise network management, powering a \$1B+/year product across 13,000+ sites.
+\item Introduced \textit{Privacy Storms}: a novel chaos engineering discipline with a fleet-wide killswitch, improving Meta's privacy infrastructure resilience confidence by 75\%; adopted org-wide.
+\item Built and led three high-performing infrastructure teams from inception; mentored 20+ engineers.
+\item 8 granted US patents in distributed systems, network security protocols, and XML message processing.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%  WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+%--- META AI & CLOUD ---
+\begin{rSubsection}{Meta}{June 2021 --- Present}{Staff Engineer, Production Engineering}{London, UK}
+{Architecting Meta's multi-cloud AI infrastructure expansion across AWS, OCI, GCP, and CoreWeave: 2.4~GW of AI compute and 400~MW of non-AI compute, nearly doubling fleet size, across clusters of 10K--40K next-generation GPUs (Blackwell) and TPUs.}
+
+\item {\em AI \& Cloud Infrastructure Networking}:
+Pioneered Meta's production-grade multi-cloud AI network architecture---the engineering blueprint
+for high-throughput, secure AI fabric routing at scale.
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+{\small
+\itemsep -0.5em
+\item Established Meta's cloud network standard: interconnect provisioning to application-layer routing, covering frontend, backend, and AI fabric networks across all hyperscalers and neoclouds.
+\item Scaled hybrid-cloud networking to orchestrate 10K--40K next-generation GPU (Blackwell) and TPU nodes per cluster, enabling continuous large-scale AI model training.
+\item Designed and provisioned 10+ direct interconnect circuits (up to 128~Tbps) between Meta data centres and cloud providers for high-throughput AI training data ingestion.
+\item Architected a unified cloud storage network: 60~PB of S3 Express Zone and FSx for Lustre, purpose-built for AI training data pipelines with low-latency random access.
+\item Defined routing policy, admission control, and network security frameworks for multi-cloud AI clusters, ensuring compliance and consistency across all providers.
+
+}
+\end{itemize}
+\end{rSubsection} 
+
+\pagebreak
+
+%--- META PRIVACY ---
+\begin{rSubsection}{}{}{}{}{Previously led the London Production Engineering Privacy team; grew and mentored a team of 7 engineers across 3 privacy organisations spanning 1,000+ engineers.}
+
+\item {\em Privacy Infrastructure Reliability}:
+Owned SRE reliability for Meta's privacy enforcement service mesh: 1+ trillion Thrift RPC access checks per day; zero site-wide outages.
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+{\small
+\itemsep -0.5em
+\item Reduced network load on privacy systems by 0.8\% via client-side policy optimisation at trillion-RPC scale.
+\item Introduced \textit{Privacy Storms}: chaos engineering with fleet-wide killswitch, improving resilience confidence by 75\%.
+}
+\end{itemize}
+
+\item {\em Planetary-Scale User Data Deletion}:
+Re-architected Meta's deletion platform for independent horizontal scaling that deletes hundreds of billions of objects per day across Facebook and Instagram.
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+{\small
+\itemsep -0.5em
+\item Deleted 23.7B Instagram accounts and 2.7T objects to decommission Nearby Friends feature, two of the largest single-product deprecations in Meta history.
+\item Delivered GDPR compliance for Meta's EU Ads-Free Subscription: purged ad data for 3B inactive and 300M active users within a 4-day SLA.
+\item Built a multi-tenant deletion framework for self-serve product deprecations, accelerating velocity by 10$\times$; reduced pipeline alerts 30\% and increased throughput 52\%.
+}
+\end{itemize}
+
+\item {\em Facebook over Tor}: Maintained Meta's onion-address infrastructure, enabling censorship-resistant access for millions of users during global internet shutdowns.
+
+\end{rSubsection}
+
+%--- CISCO ---
+\begin{rSubsection}{Cisco Systems}{April 2015 --- May 2021}{Principal Engineer, Enterprise Networking}{Bangalore, India}
+{Technical lead for Cisco DNA Center from inception to \$1B/year run-rate across 13,000+ customer sites.}
+
+\item {\em Project Maglev -- On-Premise Kubernetes PaaS}:
+Conceived and built Cisco's first production on-prem Kubernetes distribution, the microservice platform underpinning Cisco DNA Center and the technical foundation of the \$1B+ product.
+
+\begin{itemize}
+\renewcommand\labelitemi{--}
+{\small
+\itemsep -0.5em
+\item Designed hardware appliance and manufacturing pipeline; shipped 25,000+ appliances globally with hardware and OS fault-tolerance.
+\item Delivered 99.9\% uptime (up from 99.5\%) for 100+ microservices; reduced support tickets by 50\% through fault isolation and self-healing.
+\item Engineered seamless in-place upgrades across firmware, OS, Kubernetes, and PaaS, unique in the enterprise on-prem market at the time.
+\item Founded platform security practice: secure boot, TPM, encrypted filesystems; resolved CVSS-10 vulnerabilities; achieved FIPS~140-2 compliance for regulated and government deployments.
+\item Built and scaled the engineering team to 20; co-owned product roadmap; resolved majority of high-severity escalations.
+}
+\end{itemize}
+
+\item {\em Project Thundercloud -- Virtual CPE}:
+Architected a virtualised CPE platform in service provider data centres: 400 instances per UCS rack server at 10~Gbps per-instance throughput.
+
+\end{rSubsection}
+
+%--- ERICSSON ---
+\begin{rSubsection}{Ericsson Research \& Ericsson}{November 2011 --- April 2015}{Principal Research Engineer, Cloud Engineering}{Bangalore, India}
+{Led cloud-native virtualisation of Ericsson IPOS, transitioning the carrier-grade core routing platform to NFV/cloud-native deployment. Drove infrastructure innovation and filed multiple patents.}
+\end{rSubsection}
+
+%--- EARLY CAREER ---
+\begin{rSubsection}{Cisco Systems $\cdot$ Sonoa Networks (Apigee) $\cdot$ Analog Devices}{1999 --- 2011}{Technical Leader \& Software Engineer}{Bangalore, India}
+{Software engineering across Cisco UCS, Cisco VPN, Apigee XML API proxy (acquired by Google), and Analog Devices VisualDSP++.}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%  EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\em $\cdot$ M.Tech.\ in Computer Science \& Engineering} \hfill Indian Institute of Technology, Kanpur \\
+{\em $\cdot$ B.E.\ in Electronics \& Telecommunication Engineering} \hfill Jadavpur University, Calcutta
+
+\end{rSection}
+
+\end{document}
